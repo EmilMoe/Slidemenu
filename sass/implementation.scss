@@ -1,0 +1,72 @@
+html {
+    height: 2000px;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    background: url(../img/hero.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+.center {
+    text-align: center;
+}
+
+.menu {
+    &.background,
+    &.active {
+        color: #000;
+
+        a {
+            color: #000;
+        }
+    }
+
+    color: #fff;
+    
+    a {
+        color: #fff;
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}
+
+.section {
+    .row {
+        display: flex;
+
+        > div {
+            flex-grow: 1;
+            flex-basis: 0;
+        }
+    }
+
+    a {
+        color: #000;
+
+        &:hover {
+            text-decoration: none;
+            color: #999;
+        }
+    }
+
+    li {
+        font-size: 14px;
+        height: 35px;
+    }
+
+    .dropdown-header {
+        padding: 0;
+        margin-bottom: 25px;
+        
+        > * {
+            font-size: 19px;
+            font-weight: 400;
+        }
+    }
+}

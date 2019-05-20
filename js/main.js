@@ -1,11 +1,14 @@
 document.addEventListener('DOMContentLoaded', function() {
-    var options = document.querySelectorAll('#master-menu > nav > ul > li > a');
+    var menu = new Menu()
 
-    for (var i = 0; i < options.length; i++) {
-        options[i].addEventListener('click', function(event) {
-            var target = event.srcElement.attributes.href.value;
-
-            document.querySelector(target).classList.toggle('active');
-        });
-    }
-});
+    document.querySelectorAll('#master-menu > .menu > div > nav > ul > li > a').forEach(function (option) {
+        option.addEventListener('click', function(event) {
+            if (event.srcElement.tagName === 'IMG') {
+                menu.open(document.querySelector(event.srcElement.parentElement.attributes.href.value))
+            }
+            else {
+                menu.open(document.querySelector(event.srcElement.attributes.href.value))
+            }
+        })
+    })
+})

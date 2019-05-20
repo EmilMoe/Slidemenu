@@ -2,69 +2,323 @@
 <html lang="en">
     <head>
         <meta charset=utf-8>
-        <title></title>
-        <link rel="stylesheet" href="css/main.css"></style>
+        <title>Top Menu</title>
         <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/implementation.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
     </head>
-    <body style="background: #efefef">
+    <body>
         <div id="master-menu">
-            <nav>
-                <ul class="center">
-                    <li>
-                        <a href="#products">
-                            Products
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#catalogue">
-                            Catalogue
-                        </a>
-                    </li>
-                    <li>About</li>
-                    <li>Contact</li>
-                </ul>
-            </nav>
-            <section id="products">
+            <div class="menu">
+                <div class="container">
+                    <nav>
+                        <ul>
+                            <li>
+                                <img class="logo" src="img/logo.svg" width="112" alt="GUBI" />
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <a href="#products">
+                                    Products
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#catalogue">
+                                    Catalogue
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    About
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#contact">
+                                    Contact
+                                </a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <a href="#search">
+                                    <img src="http://gubi.niova.dk/theme_gubi/static/src/img/small-search-black.svg" alt="Search" style="color: #000; width: 19px; height: 19px;" />
+                                </a>
+                            </li>
+                            <li>
+                                <img src="http://gubi.niova.dk/theme_gubi/static/src/img/globe-png-black.png" style="width: 15px; height: 15px;" alt="Region" />
+                                EU
+                            </li>
+                            <li>DKK</li>
+                            <li>Cart (0)</li>
+                        </ul>
+                    </nav>
+                    <div class="separator"></div>
+                </div>
+            </div>
+            <div class="section" id="products">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-2">
-                            Product 1
+                        <div class="col-sm-6 col-md-3 col-lg-3">
+                            <ul>
+                                <li class="dropdown-header">
+                                    <a href="#">
+                                        View All Products
+                                    </a>
+                                </li>
+                                <li class="dropdown-header">
+                                    <a href="#">
+                                        Designer's Choice
+                                    </a>
+                                </li>
+                                <li class="dropdown-header">
+                                    <a href="#">
+                                        Upholstery
+                                    </a>
+                                </li>
+                            </ul>
                         </div>
-                        <div class="col-md-2">
-                            Product 2
-                        </div>
-                        <div class="col-md-2">
-                            Product 2
-                        </div>
-                        <div class="col-md-2">
-                            Product 3
-                        </div>
-                        <div class="col-md-2">
-                            Product 4
-                        </div>
-                        <div class="col-md-42">
-                            Product 5
+                        <div class="col-sm-6 col-md-9 col-lg-9">
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <ul>
+                                        <li class="dropdown-header">
+                                            <a href="#">Lighting</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Floor lamps</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Pendants</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Table Lamps</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Wall Lamps</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-2">
+                                    <ul>
+                                        <li class="dropdown-header">
+                                            <a href="#">
+                                                Seating
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Chaises Longues</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Dining Chairs</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Lounge Chairs</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Meeting Chairs</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Ottomans & Pouffes</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Sofas</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Stools & Bar Chairs</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-2">
+                                    <ul>
+                                        <li class="dropdown-header">
+                                            <a href="#">
+                                                Tables
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Bar Tables</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Coffe Tables</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Consoles</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Dining Tables</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Lounge Tables</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Side Tables</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-2">
+                                    <ul>
+                                        <li class="dropdown-header">
+                                            <a href="#">
+                                                Storage & Desks
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Coat Racks</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Desks</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Dressers & Sideboards</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Shelves</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Trolleys</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-2">
+                                    <ul>
+                                        <li class="dropdown-header">
+                                            <a href="#">
+                                                Objects
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Bowls & Flower Pots</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Candle Holders</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Cushions</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Mirrors</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-2">
+                                    <ul>
+                                        <li class="dropdown-header">
+                                            <a href="#">
+                                                Beds
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Beds & Daybeds</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </section>
-            <section id="catalogue">
-                <div class="container">
+            </div>
+            <div class="section" id="catalogue">
+                <div class="container center">
                     <div class="row">
-                        <div class="col-md-4">
-                            Catalogue 1
+                        <div class="col-md-2 offset-md-3 dropdown-header">
+                            <a href="#">    
+                                Designers
+                            </a>
                         </div>
-                        <div class="col-md-4">
-                            Catalogue 2
+                        <div class="col-md-2 dropdown-header">
+                            <a href="#">    
+                                References
+                            </a>
                         </div>
-                        <div class="col-md-4">
-                            Catalogue 2
+                        <div class="col-md-2 dropdown-header">
+                            <a href="#">    
+                                Journal
+                            </a>
                         </div>
                     </div>
                 </div>
-            </section>
+            </div>
+            <div class="section search" id="search">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <input type="text" name="keyword" value="" placeholder="Search keyword" />
+                            <img src="http://gubi.niova.dk/theme_gubi/static/src/img/small-search-black.svg" alt="Search" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section" id="contact">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-2 offset-md-3">
+                            <ul>
+                                <li class="dropdown-header">
+                                    <span>Contact</span>
+                                </li>
+                                <li>
+                                    <a href="#">Contact Us</a>
+                                </li>
+                                <li>
+                                    <a href="#">GUBI HQ</a>
+                                </li>
+                                <li>
+                                    <a href="#">Contact Persons</a>
+                                </li>
+                                <li>
+                                    <a href="#">Careers</a>
+                                </li>
+                                <li>
+                                    <a href="#">Press</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-2">
+                            <ul>
+                                <li class="dropdown-header">
+                                    <span>Where To Buy</span>
+                                </li>
+                                <li>
+                                    <a href="#">Gubi Store</a>
+                                </li>
+                                <li>
+                                    <a href="#">Store Locator</a>
+                                </li>
+                                <li>
+                                    <a href="#">Webshops</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-2">
+                            <ul>
+                                <li class="dropdown-header">
+                                    <span>Customer Support</span>
+                                </li>
+                                <li>
+                                    <a href="#">FAQ</a>
+                                </li>
+                                <li>
+                                    <a href="#">Returns</a>
+                                </li>
+                                <li>
+                                    <a href="#">Delivery</a>
+                                </li>
+                                <li>
+                                    <a href="#">Privacy Policy</a>
+                                </li>
+                                <li>
+                                    <a href="#">Terms & Conditions</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        content
+        content blabla
+        <script src="js/menu.js"></script>
         <script src="js/main.js"></script>
     </body>
 </html>
